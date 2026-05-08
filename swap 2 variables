@@ -1,0 +1,23 @@
+without using temporary 
+
+
+#include <stdio.h>
+#include <stdint.h>
+
+
+
+ void inyterchange(int a, int b ){
+     printf("values of a , b = % d ,%d ", a,b);
+     a=a+b;                                                     
+     b=a-b;
+     a=a-b;
+     printf("values of anew , bne= % d ,%d ", a,b);
+ }
+
+
+int main() {
+    int a =2;int  b=6;
+    inyterchange(a,b);
+
+    return 0;
+}
