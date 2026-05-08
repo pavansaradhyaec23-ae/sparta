@@ -1,0 +1,36 @@
+In C programming, a macro is a symbolic name or constant that represents a value, expression, or code snippet. They are defined using the #define directive, and when encountered, the preprocessor substitutes it with its defined content.
+
+Example
+
+
+
+
+#include <stdio.h>
+​
+// Macro definition
+#define LIMIT 5
+​
+int main(){
+  
+    // Print the value of macro defined
+    printf("LIMIT: %d", LIMIT);
+​
+    return 0;
+}
+
+
+
+OUR Q:
+#include <stdio.h>
+#include <stdint.h>
+
+
+
+#define MAX(x,y,z) ((x>y)?((x>z)?x:z):(y>z)?y:z) // WE HAVE USED CONDITIONAL OPER as if else was not allowed //
+
+
+int main() {
+   printf("MAX=%d",MAX(8,11,5));
+
+    return 0;
+}
