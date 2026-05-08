@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdint.h>
+uint32_t bits(uint32_t word,uint8_t bitno){
+ word |= 1<<bitno;
+ return word;
+ }
+ 
+ 
+ uint32_t bitr(uint32_t dat,uint8_t bitn){
+     dat &= ~(1<<bitn);
+     
+     
+     return dat;
+ }
+int main() {
+   uint32_t input =7;uint32_t output,op1;
+   output = bits(7,3);
+   op1 = bitr(7,2);
+  printf("input = %d , output = %d",input,output);
+  printf("input = %d , output = %d",input,op1);
+    // Write C code here
+    //
+
+    return 0;
+}
