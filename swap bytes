@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdint.h>
+
+uint32_t swap(uint32_t data){
+    uint32_t output=0x0;
+    for(int i=0;i<4;i++)
+    {
+        output = data<<8;
+    }
+    return output;
+    
+}
+int main() {
+    uint32_t output=swap(0xcc8700fc);
+    printf(" ou = 0x%x",output);
+    // Write C code here
+    printf("Start small. Ship something.");
+
+<The function `swap()` takes a 32-bit hexadecimal value and shifts all its bits 8 positions to the left using `data << 8`.  
+Although a `for` loop runs 4 times, the same shifted value is repeatedly assigned to `output`, so the loop has no actual effect.  
+Finally, `main()` calls the function with `0xCC8700FC` and prints the shifted result in hexadecimal format>
