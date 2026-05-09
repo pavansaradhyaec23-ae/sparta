@@ -21,3 +21,28 @@ int main() {
 
     return 0;
 }
+
+
+
+
+//////////////////////////othermethod
+
+
+
+#include <stdio.h>
+#include <stdint.h>
+void swap(int a, int b){
+    printf(" values before:%d , %d ",a,b);
+    a=a+b;
+    b=a-b;
+    a=a-b;
+    printf(" values after : %d , %d ",a,b);
+}
+int main() {
+   
+    swap(5,1);
+    
+    
+
+    return 0;
+}
