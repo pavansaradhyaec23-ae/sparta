@@ -1,0 +1,30 @@
+Define a structure for a student with name, roll number, and marks in 5 subjects. Calculate the average marks for a list of students. ( Structure with Arrays).
+
+WTD: Construct a structure that encapsulates a student's details, specifically their name, roll number, and scores in five subjects. Implement a function that computes the average marks for an array of student structures.
+
+(e.g: I/P: Name: "Alex", Roll: 105, Marks: [75, 80, 88, 82, 86]; O/P: Avg Marks: 82.2)
+
+
+
+
+
+
+
+// Online C compiler to run C program online
+#include <stdio.h>
+typedef struct s1 { char name[5];
+int roll_num ;
+int arr[5];
+}s1
+;
+
+
+int main() {
+    s1 s={"ronu",21,{24,23,22,26,27}};
+    int ch=(s.arr[0] + s.arr[1] + s.arr[2] + s.arr[3] + s.arr[4])/5;
+    printf("the avg marks of %s is %d",s.name,ch);
+   
+  
+
+    return 0;
+}
