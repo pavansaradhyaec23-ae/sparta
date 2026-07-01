@@ -1,35 +1,33 @@
+
 #include <stdio.h>
 
 int main() {
-    int arr[] = {2, 7, 4, 1, 5, 3};
-    int n = sizeof(arr) / sizeof(arr[0]);
-
-    int i, j, minIndex, temp;
-
-    // Selection Sort
-    for (i = 0; i < n - 1; i++) {
-
-        // Assume the first element of the unsorted part is the minimum
-        minIndex = i;
-
-        // Find the smallest element in the remaining array
-        for (j = i + 1; j < n; j++) {
-            if (arr[j] < arr[minIndex]) {
-                minIndex = j;
+    int arr[]={4,0,3,8};
+    int n=sizeof(arr)/sizeof(arr[0]);
+    int i,j,min,temp;
+    
+    for(i=0;i<n-1;i++){
+        min=i;
+        
+        
+        for(j=i+1;j<n;j++){
+            if(arr[j]<arr[min]){
+                min=j;
+                
             }
         }
-
-        // Swap the found minimum element with the first unsorted element
-        temp = arr[i];
-        arr[i] = arr[minIndex];
-        arr[minIndex] = temp;
+        
+        temp=arr[i];
+        arr[i]=arr[min];
+        arr[min]=temp;
+        
     }
-
-    // Print the sorted array
-    printf("Sorted Array: ");
-    for (i = 0; i < n; i++) {
-        printf("%d ", arr[i]);
+    
+    
+    for(i=0;i<n;i++){
+        printf(" %d ", arr[i]);
     }
+    
 
     return 0;
 }
