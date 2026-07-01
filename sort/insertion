@@ -1,0 +1,32 @@
+
+#include <stdio.h>
+
+int main() {
+    int arr[]={2,4,6,3,8};
+    int n=sizeof(arr)/sizeof(arr[0]);
+    int i,temp,hole;
+    
+    for(i=1;i<n-1;i++){
+        temp=arr[i];
+        hole=i;
+        
+        while(hole>0 && arr[hole-1]>temp){
+            arr[hole]=arr[hole-1];
+            hole--;
+        }
+        
+       
+        arr[hole]=temp;
+        
+        
+        
+    }
+    
+    
+    for(i=0;i<n;i++){
+        printf(" %d ", arr[i]);
+    }
+    
+
+    return 0;
+}
