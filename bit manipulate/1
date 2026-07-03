@@ -1,0 +1,27 @@
+Given an array of integers in which every element appears exactly twice except for one element that appears only once, write a C program to find the unique element 
+
+hint : num ^ num =0;
+
+
+
+
+#include <stdio.h>
+
+int main() {
+    int a[]={2,2,3,4,6,6,4,3,7};
+    int n= sizeof(a)/(sizeof(a[0]));
+    int x=0;
+    printf("Arr elements are:");
+    for(int i=0; i<n;i++){
+      
+        printf("\t %d",a[i]);
+        x=x^a[i];
+    
+        
+    }
+     printf("the number which appears only once is :%d",x);
+    
+   
+
+    return 0;
+}
