@@ -1,0 +1,23 @@
+Add bit manipulation program to compute XOR for all numbers upto N
+
+
+#include <stdio.h>
+
+int main() {
+   int a ;
+   printf("enter : ");
+   scanf("%d",&a);
+   int b=0;
+   int i =0;
+   while( i <= a){
+       b=b^i;
+       i++;
+       
+   }
+   printf("out : %d",b);
+   
+    
+   
+
+    return 0;
+}
