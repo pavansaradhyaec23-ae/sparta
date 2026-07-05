@@ -1,0 +1,23 @@
+checking whether the ith bit of n is set
+
+
+
+#include <stdio.h>
+
+int main() {
+    int n;
+    int i,p;
+    printf("enter N and i ; ");
+    scanf("%d",&n);
+    scanf("%d",&i);
+    printf("N and i are - %d,%d",n,i);
+    p=1<<(i);
+    if(n&p){
+        printf("set");
+    }
+    else printf("r");
+    
+   
+    
+    return 0;
+}
