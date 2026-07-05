@@ -1,0 +1,22 @@
+clear kth bit
+
+
+
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    int n;
+    int i,p;
+    printf("enter N and i ; ");
+    scanf("%d",&n);
+    scanf("%d",&i);
+    printf("N and i are - %d,%d",n,i);
+    p=1<<(i);
+    int b= n &  ~p;
+    printf("the number after setiing / unse : %d",b);
+    
+    // Write C code here
+    
+    return 0;
+}
