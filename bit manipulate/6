@@ -1,0 +1,22 @@
+know whether the kth bit is 0 or 1
+
+
+
+
+#include <stdio.h>
+
+int main()
+{
+    int n, k;
+    printf("Enter number: ");
+    scanf("%d", &n);
+
+    printf("Enter bit position (0-based): ");
+    scanf("%d", &k);
+
+    int bit = (n >> k) & 1;
+
+    printf("Bit %d = %d\n", k, bit);
+
+    return 0;
+}
